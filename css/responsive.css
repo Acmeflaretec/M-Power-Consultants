@@ -33,8 +33,10 @@
 
   .about_section .img-box img {
    height: auto;
-  
- 
+  }
+  .contact_section .contact-img img{
+    height: 80%;
+    width: 80%;
   }
 }
 
