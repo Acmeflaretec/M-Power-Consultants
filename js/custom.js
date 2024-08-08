@@ -99,7 +99,7 @@ $(document).ready(function () {
     );
 
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycby3BJOPjNqmUibFpZN7J47LuORI0RzVortWTbnFthv7eVJyyYKY1rJy2tL-BYLlDDQzvg/exec",
+      url: "https://script.google.com/macros/s/AKfycbzLz7C4UczWx69qiU_lp1T_nJ3gkQp7dCdXFqhq0lDWXFuMDv12uHdMVIEOTKHnGPlBLQ/exec",
       data: $("#submit-form").serialize(),
       method: "post",
       success: function (response) {
