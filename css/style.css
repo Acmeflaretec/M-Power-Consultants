@@ -631,7 +631,6 @@ a:focus {
 
 .about_section .img-box img {
   width: 90%;
-
 }
 
 .about_section .detail-box p {
@@ -994,7 +993,7 @@ a:focus {
   background-color: transparent;
   color: #2c7873;
 }
-.info_section .info_form .map-location iframe{
+.info_section .info_form .map-location iframe {
   height: 250px;
   width: 250px;
 }
@@ -1016,3 +1015,79 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*** Services Start ***/
+
+.services .services-item {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: relative;
+}
+.specialities .services-item .services-content,
+.specialities .services-item .services-content h4 {
+  color: black;
+}
+.services-content::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0;
+
+  transition: 0.5s;
+}
+.specialities .services-content::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0;
+  background: #2c7873;
+  transition: 0.5s;
+}
+
+.services-content::after {
+  top: 0;
+  bottom: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.services-item:hover .services-content::after {
+  height: 100%;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.services-item:hover .services-content-icon {
+  position: relative;
+  z-index: 2;
+}
+
+.services-item .services-content-icon i,
+.services-item .services-content-icon p {
+  transition: 0.5s;
+}
+
+.services-item:hover .services-content-icon i {
+  color: #65fedb !important;
+}
+
+.services-item:hover .services-content-icon p {
+  color: white;
+}
+
+.services-item:hover .services-content-icon h5 {
+  color: white;
+}
+.specialities .card-item {
+  margin-top: 50px;
+}
+
+/*** Services End ***/
